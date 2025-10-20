@@ -1,0 +1,117 @@
+/*
+  1. Global Styles and Background
+*/
+
+.center-container {
+  /* This container is optional, but useful for modern centering methods like Flexbox/Grid */
+  text-align: center; /* This can sometimes center inline elements, but margin: auto is preferred for the image itself */
+}
+
+.center-image {
+  /* 1. Set the size (Medium Size Example) */
+  width: 450px; /* You can adjust this value (e.g., 300px for small, 600px for large) */
+  height: auto; /* Ensures the image scales proportionally and doesn't get stretched */
+
+  /* 2. Enable horizontal centering using margins */
+  display: block;  /* Needed for margin: auto to work */
+  margin: 0 auto;  /* Sets top/bottom margin to 0 and left/right margin to auto for centering */
+}
+
+body {
+    /* Replace 'your-background-image.jpg' with the actual path to your image */
+    background-image: url('309389981_171629418781608_8802935221272345180_n.jpg');
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-attachment: fixed; /* Keeps the background image in place when scrolling */
+    background-position: center; /* Centers the background image */
+    font-family: 'Georgia', serif;
+    color: #333; /* Dark text for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/*
+  2. Header and Navigation
+*/
+header {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    position: sticky; /* Keeps the header visible at the top */
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    color: #4a235a; /* A nice contrasting color */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #884ea0;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #f0e6f2;
+}
+
+/*
+  3. Main Content - The "Pages"
+*/
+main {
+    padding: 40px 20px;
+    max-width: 900px; /* Limits the content width */
+    margin: 0 auto; /* Centers the content */
+}
+
+.autobiography-page {
+    background-color: rgba(255, 255, 255, 0.95); /* Nearly opaque white for content */
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    line-height: 1.6;
+    min-height: 300px; /* Ensures each "page" has some height */
+    scroll-margin-top: 100px; /* Space from sticky header when jumping with nav links */
+}
+
+.autobiography-page h2 {
+    color: #4a235a;
+    border-bottom: 2px solid #d4bbed;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* Separator line between sections */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #ccc, rgba(0, 0, 0, 0));
+    margin: 40px 0;
+}
+
+/*
+  4. Footer
+*/
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-top: 1px solid #ccc;
+    font-size: 0.9em;
+}
+
